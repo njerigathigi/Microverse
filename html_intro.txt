@@ -1,0 +1,6 @@
+-HTML & CSS work together to create webpages.
+-HTML is the raw data that a webpage is built out of eg text, buttons, links etc
+-CSS is what adds style to those plain elements
+-HTML puts information on a webpage, CSS adds font, color, positions it etc
+-HTML and CSS are not programming languages because are not used to program
+ any logic and add functionality . They are only concerned with presenting information.
