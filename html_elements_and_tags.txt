@@ -1,0 +1,16 @@
+- HTML ~ HyperText Markup Language
+- HTML opening tags <>, closing tags </> eg paragraph opening tag <p>, closing tag </p>
+- Opening tags tell the browser this is the beginning of a HTML element.
+- Closing tags tell the browser this is the end of a HTML element.
+- HTML elements are comprised of the opening tag, content and closing tags. <p> Hi </p>. They are like containers
+for content.
+ The opening and closing tags tell the browser what content the element contains ie is it a paragraph, 
+ an image, a heading, a link etc . The browser uses that information to determine how it should interpret 
+ and format the content.
+- Some HTML elements do not contain closing tags eg <img>, <br>
+ They are known as self-closing tags.
+ some like <br> are known as empty elements because they do not wrap any content.
+ - HTML has a vast list of predefined tags. Using the correct tags is important because it impacts
+ how they are ranked on search engines and how accessible they are to users who rely on assistive technologies
+ like screen readers to use the internet.
+- Using the correct elements for HTML is called semantic HTML.
