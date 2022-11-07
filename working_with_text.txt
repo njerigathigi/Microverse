@@ -1,0 +1,32 @@
+These are the text based element that you will use the most:
+  <p></p> - to write paragraphs. This tag adds a new line. Without it, text would be displayed as a single block even with new lines added in the .html file. This is
+  because when the browser encounters these lines, it will compress them into one single space.
+  <h1> to <h6> - to write headings ie <h1>..</h1> etc. The number within the tag represents the heading's level. ie <h1> largest and most important, <h6> tiniest and least important.
+  The correct level of heading is important as it provides hierarchy to the content. ie <h1> heading for the overall page's heading, lower levels for headings for content in smaller sections of the page.
+  <strong></strong> - makes text bold and marks text as important. This affects tools like screen readers ie causes change in tone to communicate importance of the text. This is important to people with eg visual impairment.
+  It can be used on its own or in combination with other html tags ie <strong> hi! </strong> or <p> she said <strong> hi!</strong> with enthusiasm</p> .
+  <em></em> - Makes text italic. It places emphasis on a text. Useful with screen readers. It can be used on its own or in combination with other html tags.
+
+NESTING AND INDENTATION
+   - We indent any elements that are within other elements. This is known as nesting elements.
+   - When we nest elements within other elements, we create a parent child relatidewsonship between them. The nested elements are the children and the elements 
+   they are nested within are the parents.
+   - eg <body>
+          <h1> Greetings</h1>
+          <p>Hi!</p>
+        </body>
+   - Just like in human relationships, parent elements can have many children.
+   - Elements at the same level of nesting are considered to be siblings eg <h1></h1> and <p></p> in the example above.
+- We use indentation to make the level of nesting clear and readable for ourselves and other developers who will work with our HTML in the future.
+- It is recommended to indent any child element by two spaces.
+
+HTML comments
+syntax : <!-- This is a comment -->
+<!--This is my own understanding-->
+<> are the opening and closing tags
+! is used to make declarations
+-- -- is the syntax or identifying factor of a comment
+<!-- This is the continuation of the provided notes -->
+- Comments are invisible to the browser
+- They allow us to comment on our code so our future selves or other developers can get some context about something that might not be clear in the code.
+- we enclose the comment with <!-- and --> tags.
