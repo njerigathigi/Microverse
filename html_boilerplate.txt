@@ -1,0 +1,37 @@
+ - All HTML documents have the same boilerplate/structure.
+ - To create a HTML file, we append the filename with the extension .html 
+ - The HTML file that will contain the homepage for our websites should always be named index.html.
+ - This is because web servers will by default look for an index.html page when users land on our websites - not having one will cause big problems.
+- The <!DOCTYPE/> declaration tells the browser what version of HTML it will use to render the document.
+ The latest  version of HTML is HTML5 ie <!DOCTYPE html>
+ HTML4 ie <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ You don't want to be using an older HTML version.
+- After the <!DOCTYPE> declaration, we need to provide the <html> element.
+ It is known as the root element of the document meaning that every other element will be a 
+ descendant of it.
+ This becomes important later on when we learn about manipulating HTML with JavaScript.
+ The lang attribute specifies the language of the text content in that element eg <html lang="en"/>...</html>
+ This attribute improves accessibility of the webpage.
+ It allows assistive technologies eg screen readers to adapt according to the language and invoke correct pronunciation.
+- The <head>...</head> element is where we put important meta-information(self-referencing) about our webpages.
+ The <head></head> tag should not contain any element that displays content on the webpage. The following are tags included in the <head></head> tag.
+ Setting the encoding is very important.It ensures that the webpage will display special symbols and characters
+ from different languages correctly in the browser. This is done by the charset meta element <meta charset="utf-8"/> .
+ The <title>...</title> element is also included in the <head>...</head> element.
+ The title element is used to give the document a human readable title which is displayed in our webpage's browser tab. Excluding it would make it difficult to
+ find a webpage if the user has many tabs open ie all of them would be named index.html. This is because the webpage's title would default to it's file name.
+ The head element 
+ - The <body> ... </body> element is the final element required to finish the html boilerplate.
+ It is where all the content needed to be displayed to the users will go. ie text, images, links etc.
+ The <body>...</body> element goes within the html element and is always under the <head>..</head> element
+ NB: On its own, the <body>...</body> element displays nothing. You must add other elements such as <h1>..</h1> to it.
+
+ To view your html file in the browser(using google chrome as reference):
+ 1. Drag and drop html file from your text editor into your browser's address bar.
+ 2. Find html file in your file system and double click it (to select and open it). This will open up the file in the default browser your system uses.
+ 3. Use the terminal :
+   Ubuntu - navigate(cd) to the directory containing the file and type google-chrome index.html
+   MacOs - navigate to the directory containing the file and type open ./index.html (./ means stay in the same directory)
+
+VsCode shortcut - It only works while editing files with a .html file extension or with text files with html selected as the official language.
+Enter ! on the first line and the html structure will be generated for you. (choose the first option by pressing enter)
