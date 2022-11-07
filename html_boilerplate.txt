@@ -20,7 +20,7 @@
  The <title>...</title> element is also included in the <head>...</head> element.
  The title element is used to give the document a human readable title which is displayed in our webpage's browser tab. Excluding it would make it difficult to
  find a webpage if the user has many tabs open ie all of them would be named index.html. This is because the webpage's title would default to it's file name.
- The head element 
+ The head element goes within the html element and should always be the first element under the <html> opening tag. 
  - The <body> ... </body> element is the final element required to finish the html boilerplate.
  It is where all the content needed to be displayed to the users will go. ie text, images, links etc.
  The <body>...</body> element goes within the html element and is always under the <head>..</head> element
