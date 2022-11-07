@@ -1,0 +1,13 @@
+In HTML, there are different types of lists at your disposal:
+ . Unordered lists
+  . If you want to have a list of items where the order doesn't matter then you can use an unordered list ie a shopping list where items can be bought in any order
+  . Unordered lists are created using the <ul>...</ul> element.
+  . Each item within the unordered list is created using the list item element <li>...</li>
+  . Each list item in an unordered list begins with a bullet point. ( . )
+
+2. Ordered lists
+  1. If you want to create a list of items where order does matter, like a step by step recipe/ top ten favourite movies,then ordered lists should be used.
+  2. Ordered lists are created using the <ol>...</ol> element.
+  3. Each individual item within the <ol>..</ol> element is created using the list item element <li>..</li>
+  4. Each list item in an ordered list begins with a number instead.
+  
