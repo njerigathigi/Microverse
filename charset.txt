@@ -1,0 +1,5 @@
+A character set is like a digital alphabet for your browser.
+It only affects how the letters are rendered and not the language of content.
+The default character set for most browsers does not accommodate some special characters.
+To fix this, specify a UTF-8 character encoding by adding a <meta> element with a charset attribute to the <head> element.
+UTF-8 is like a universal alphabet for the internet.
