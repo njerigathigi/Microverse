@@ -1,0 +1,23 @@
+<a href="url">...</a> - An anchor tag is used to create links. It has an attribute (href). Attributes go in the opening tag and give additional information to a HTML 
+element. An attribute is usually made up of two parts- Key and value. Not all attributes have values though. href(hyperlink reference) tells the browser 
+the destination of the resource. When present, the href attribute gives the text a blue color and underlines it to signify that its a link. You csn use this element
+to link any resource on the internet ie videos, pdfs files, images etc. Links can be absolute (links to pages on other websites on the internet ie 
+protocol://domain/path) or relative(links to pages located on our own websites)
+
+<img src="" alt="pic"> - to display an image. It is a self closing element. It embeds an image into the page using a src(source) attribute which tells the browser where the image 
+file is located. The src attribute can embed an image using both absolute and relative paths. alt(alternative text) attribute describes an image. It is used in place
+of the image if it cannot be loaded. It is also used by screen readers to describe to visually impaired users what the image is.
+
+parent directory - A directory containing the current directory. ie links_and_images is a parent to both images and pages.
+using the tree analogy, there is a parent and child analogy. The root directory is the parent directory. A subdirectory is also a parent directory when there are one or
+more subdirectories below it. Each subdirectory is a child of the parent directory that is above it.
+
+image formats :
+1. jpg images -  Have .jpg file extension eg cat.jpg . They are designed to handle large color palletes without extorbitantly increasing the file size.
+This makes them great for photos and images with lots of gradients in them. They don't allow for transparent pixels.
+2. Gif images - They are the go to for simple animations. They're, however, limited in terms of color pallete. They don't allow for translucent pixels. 
+This makes it hard to get high ampunts of details on a transparent background. It is better to use PNG images if you don't need animation. Have .gif extension.
+3. PNG images - Have .png file extension. They are great for anything that is not an animation or a photo eg icons, logos, technical diagrams etc.
+However, when PNG images are scaled up or down, they lose quality and become pixelated.
+4. SVG images - Have .svg file extension. SVG is a vector based graphics format. It can scale up or down without loss of quality. They  are a great tool for responsive
+design.
