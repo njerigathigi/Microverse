@@ -1,0 +1,36 @@
+-It is advised to commit everytime you have a meaningful change in the code. This will create a timeline of your progress.
+-Type a commit to add new code, fix a typo or a bug.
+Rules:
+1.Use an active voice - "Fix card generator"
+2.Avoid using vague messages ie saved/ updated. 
+3.commit early and often .
+4.Limit the subject like to 50 characters. 72 is the hard limit.
+5.Begin the commit message with a capital letter
+6.Do not use a period at the end of the commit message
+7. Wrap the body at 72 characters. Use the body to explain when, how and why.
+8. Separate subject from the body with a blank line.
+
+Meta data - A set of data that describes and gives more information about other data.
+git log - use this command to view the history of commits to a repository . This will display meta data 
+(author and Date) and the commit itself.
+-To find a specific line of code, use execute git log -S "line of code you are looking for" 
+eg git log -S "<!DOCTYPE html>" . This will display a commit.(The value after -S is the commit made. Wrap it in 
+quotation marks)
+-To exit git log, type "q" or "z" (without the quotation marks)
+git blame - To know who to blame for bad code.
+full command : git blame file/path/resource(can even be an absolute link) eg git blame index.html
+This will display the id, author, timestamp, line number and line content.
+Finessing:
+1. -L eg. git blame -L 1,4 links_and_images/index.html
+This will restrict the output to the requested line range.
+Here we have restricted the output from line 1 through 4.
+2. -e eg. git blame -e links_and_images/index.html
+Shows the authors email address instead of username.
+3. -W eg. git blame -w links_and_images/index.html
+ignores whitespace changes ie if the author just added whitespaces/newlines/switched from tabs to spaces.
+4. -M eg git blame -m links_and_images/index.html
+This detects moved/copied lines within the same file.
+This will report the original author instead of the last author that moved/copied the lines.
+5. -C eg git blame -C links_and_images/index.html
+This detects lines that were moved/copied from other files.
+This will report the original author instead of the last author that moved/copied the lines.
