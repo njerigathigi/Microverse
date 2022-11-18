@@ -38,4 +38,5 @@ This detects lines that were moved/copied from other files.
 This will report the original author instead of the last author that moved/copied the lines.
 
 git revert - reverts a commit eg git revert commit's ID(get the ID of a commit by using git log)
-To escape git revert , press the escape key and type :wq and press Enter/return
+Write a commit message explaining the change in the shell that appears
+To save your changes and escape git revert , press the escape key and type :wq and press Enter/return
