@@ -13,10 +13,12 @@ Rules:
 Meta data - A set of data that describes and gives more information about other data.
 git log - use this command to view the history of commits to a repository . This will display meta data 
 (author and Date) and the commit itself.
+Git log also provides the ID(identification) of a commit.
 -To find a specific line of code, use execute git log -S "line of code you are looking for" 
 eg git log -S "<!DOCTYPE html>" . This will display a commit.(The value after -S is the commit made. Wrap it in 
 quotation marks)
 -To exit git log, type "q" or "z" (without the quotation marks)
+
 git blame - To know who to blame for bad code.
 full command : git blame file/path/resource(can even be an absolute link) eg git blame index.html
 This will display the id, author, timestamp, line number and line content.
@@ -34,3 +36,5 @@ This will report the original author instead of the last author that moved/copie
 5. -C eg git blame -C links_and_images/index.html
 This detects lines that were moved/copied from other files.
 This will report the original author instead of the last author that moved/copied the lines.
+
+git revert - To revert a commit. eg git revert commit's ID(provides by running git log)
