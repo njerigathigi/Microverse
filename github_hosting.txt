@@ -1,0 +1,9 @@
+-Github allows you to publish your web projects directly from a Github repository.
+- Doing this will allow you to access your project from the web using : your git username.github.io/your git repo name
+How to host on git:
+1. Change the main HTML file of your project to index.html(A must!)
+2. Go to your github re-po on the web and click on settings.
+3. Click on Pages on the left side bar. 
+4. Change the branch from none to main branch and click save.
+5. It will take a few minutes/ a while. Be patient. Do not add a theme to your project or you may have git conflicts.
+6. Now you can access your project over the web.
