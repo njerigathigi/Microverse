@@ -1,0 +1,61 @@
+- CSS adds style to a HTML page.
+CSS is made up of various rules. These rules are made up of a selector and a semi-colon separated list of declarations.
+Each of these declarations are made up of a property:value pair.
+Syntax : Selector { Property: value; } 
+NB: A selector can have many property and value pairs. They are usually separated by a semi-colon (;)
+NB: A <div> is a HTML element. It is an empty container.
+Selector - It is the first part of a CSS rule. Selectors tell the browser which HTML elements should be selected to have
+certain CSS Properties and values applied to them. eg * { color: red; font-style: Sans-serif } - * is the selector, color  
+and font-style are the Properties and red and Sans-serif are the values.
+
+Types of selectors:
+1. Universal selector
+A universal selector will select all elements  except those with specified selectors set for them
+eg * { color: red; } . All elements will have the color red.
+
+2. Type selectors
+A type selector is also known as an element selector. Type selectors select all elements of the given element type.
+The syntax is the name of the element eg h2{ color: blue; }
+
+3. Class selectors
+syntax: .value of the class attribute eg .flowers{ color: green; } . The value of the class attribute is case-sensitive.
+Class selectors will select all elements with the given class. 
+class is an attribute placed inside a HTML element eg <p class="flowers"> Hello world! </p>
+You can use the same class on as many elements as you like. This is because classes aren't required to be unique.
+You can add multiple classes to an element as a space separated list ie <div class="flowers pots bees"></div>.
+Since space is used to separate class names, you should never use it to separate multi-worded names and should use A
+hyphen instead eg <div class="flower-pot honey-bees bees-wax"></div>
+
+4.ID selectors
+Syntax: #value of the class attribute eg #unique{ color: green; }. The value of the ID attribute is case-sensitive.
+An ID is an attribute that you place inside a HTML element. eg <p id="cat">meow!</p>
+ID selectors select an element with the given ID.
+IDs should be used sparingly ie for specificity(more on this in a few) or when you have links redirecting to a section
+on the current page.
+An element can only have one ID ie they are unique. An ID cannot be repeated on any single page.
+The ID attribute should not have any whitespace at all.
+
+5.Grouping selector
+To cut down on repetition, we can group selectors that have some common declarations as a coma separated list.
+eg .read{ color: red; background-color: black; /* several unique declarations*/ ;}  
+.unread{ color: red; background-color: black; /* several unique declarations*/ ;} 
+
+grouping example : .read, .unread{ color:red; background-color:black;} .read{/* several unique declarations*/;} 
+unread{/*several unique declarations*/;}
+-Grouping reduces repetition of declarations and makes it easier to edit either the color or the background-color
+of both classes at once.
+
+6.Chaining selectors
+Chaining selectors is useful when you want to apply  a certain rule to an element that has two or more specified
+classes (which have their own unique declarations).
+eg
+<div>
+  <div class="subsection header"</div>
+  <p class="subsection preview">Hello world</p>
+</div>
+
+You can apply a certain CSS rule to an element that has both the subsection and preview  classes as follows:
+.subsection.preview{ color: blue; } NB: There is no space between both classes (This is the syntax).
+This syntax works for chaining any combination of selectors except type selectors eg h1p{} as there is no such 
+HTML element.
+It also works for chaining classes and IDs eg .subsection#flowers{ color: purple; }
