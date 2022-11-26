@@ -23,7 +23,7 @@ Class selectors will select all elements with the given class.
 class is an attribute placed inside a HTML element eg <p class="flowers"> Hello world! </p>
 You can use the same class on as many elements as you like. This is because classes aren't required to be unique.
 You can add multiple classes to an element as a space separated list ie <div class="flowers pots bees"></div>.
-Since space is used to separate class names, you should never use it to separate multi-worded names and should use A
+Since space is used to separate class names, you should never use it to separate multi-worded names and should use a
 hyphen instead eg <div class="flower-pot honey-bees bees-wax"></div>
 
 4.ID selectors
@@ -35,7 +35,8 @@ on the current page.
 An element can only have one ID ie they are unique. An ID cannot be repeated on any single page.
 The ID attribute should not have any whitespace at all.
 
-5.Grouping selector
+Grouping selector
+
 To cut down on repetition, we can group selectors that have some common declarations as a coma separated list.
 eg .read{ color: red; background-color: black; /* several unique declarations*/ ;}  
 .unread{ color: red; background-color: black; /* several unique declarations*/ ;} 
@@ -45,7 +46,8 @@ unread{/*several unique declarations*/;}
 -Grouping reduces repetition of declarations and makes it easier to edit either the color or the background-color
 of both classes at once.
 
-6.Chaining selectors
+Chaining selectors
+
 Chaining selectors is useful when you want to apply  a certain rule to an element that has two or more specified
 classes (which have their own unique declarations).
 eg
@@ -59,3 +61,24 @@ You can apply a certain CSS rule to an element that has both the subsection and 
 This syntax works for chaining any combination of selectors except type selectors eg h1p{} as there is no such 
 HTML element.
 It also works for chaining classes and IDs eg .subsection#flowers{ color: purple; }
+
+Descendant combinators
+Combinators show a relationship between selectors.
+There are 4 combinators in total.
+A descendant combinator is represented by a single space between selectors (The syntax is a space between selectors).
+Its an ancestor and descendant kind of relationship ie child, parent, grandparent etc
+
+eg <div class="doll">
+     <div class="flower">
+       <p class="heart-plants">I love plants!</p> <!-- The text will be green -->
+       <p> plants are awesome!</p> <!-- The text will be purple -->
+     </div>
+   </div>
+   <div class="doll"> <!-- Will have the declarations specified in the class (doll) applied -->
+   </div>
+
+.doll .flower{ color: green; }
+.doll .flower .heart-plants{ color: purple; }
+.doll{ /* several unique declarations*/ }
+
+Avoid over-nesting to avoid confusion eg .doll .flower . heart-plants .cute-flower (etc) , as it might cause confusion.
