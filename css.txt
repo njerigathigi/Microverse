@@ -84,6 +84,9 @@ eg <div class="doll">
 Avoid over-nesting to avoid confusion eg .doll .flower . heart-plants .cute-flower (etc) , as it might cause confusion.
 
 CSS Properties
+some terms to know:
+A keyword is a closely related or associated word that is reserved by a program because, the word has a special 
+meaning that defines commands and specific parameters for that code set.
 
 Color and Background-color 
 The color property sets an element's text-color. It accepts several values eg color : red; (a keyword) and 
@@ -104,3 +107,21 @@ eg p{
   color: hsl(0, 100%, 50%);
 }
 background-color sets the background color of an element.
+
+Typography basics and text-align
+
+Font-family can be a single value or a comma-separated list of values that determine what font an element uses.
+There are two categories of font :
+
+1. Font-family names eg "Times New Roman". (We use quotes because of whitespaces between words)
+2. Generic family names eg sans-serif . They do not use quotes
+If a browser cannot find/ does not support the first font in a list, it will use the next one and so on until it finds
+a supported and valid font.
+It is best practice to include a list of values for this property, starting with the font that you want to be used most
+and ending with a generic font-family as a fall back. eg font-family: "Times New Roman", sans-serif;
+
+font-size sets the size of the font. The value should not contain any whitespaces eg font-size: 20px;
+font-weight affects the boldness of text, assuming the font supports the specified weight. The value can be a keyword
+eg font-weight: bold; or a number between 1-1000(inclusive) eg font-weight: 700;(the equivalent of bold)
+
+text-align will align text horizontally within an element. eg text-align: center; . The values are keywords.
