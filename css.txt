@@ -171,3 +171,9 @@ font-family, etc.) are usually inherited, while most other properties aren’t.
 The exception to this is when directly targeting an element, as this always beats inheritance ie when an element has its
 own declaration(s). This applies even if the parent element has a selector with a higher specificity. The child will
 still have the specified style applied to it if the declaration directly targets it.
+
+Rule order
+Let’s say that after every other factor has been taken into account, there are still multiple conflicting rules 
+targeting an element. How does the cascade determine which rule to apply? Whichever rule was the last defined is the winner.
+
+Adding CSS to HTML
