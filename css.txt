@@ -82,3 +82,25 @@ eg <div class="doll">
 .doll{ /* several unique declarations*/ }
 
 Avoid over-nesting to avoid confusion eg .doll .flower . heart-plants .cute-flower (etc) , as it might cause confusion.
+
+CSS Properties
+
+Color and Background-color 
+The color property sets an element's text-color. It accepts several values eg color : red; (a keyword) and 
+HSL (Hueness, Saturation and Lightness color model), HEX(The values are a special code that represents color values 
+from 0 to 255) and RGB color values. (red, green, blue color values).
+You can adjust the opacity by adding an alpha value. eg RGBA OR HSLA eg rgba(255, 0, 0, 0.5) will be a transulucent red.
+
+eg p{
+  color: red;
+  
+  /* rgb example */
+  color: rgb((255, 0, 0));
+  
+  /* HEX color code */
+  color: #FF0000;
+  
+  /* hsl example */
+  color: hsl(0, 100%, 50%);
+}
+background-color sets the background color of an element.
