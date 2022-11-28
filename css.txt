@@ -163,3 +163,11 @@ NB: This only applies when an element has (a) conflicting declaration(s). A decl
 there is no conflicting declaration for it.
 4. Combinators and the universal selector have no specificity.
 5. The type selector has the lowest specificity value.
+
+Inheritance
+inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants,
+even if we don’t explicitly write a rule for those descendants. Typography based properties (color, font-size, 
+font-family, etc.) are usually inherited, while most other properties aren’t.
+The exception to this is when directly targeting an element, as this always beats inheritance ie when an element has its
+own declaration(s). This applies even if the parent element has a selector with a higher specificity. The child will
+still have the specified style applied to it if the declaration directly targets it.
