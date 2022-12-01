@@ -177,3 +177,42 @@ Let’s say that after every other factor has been taken into account, there are
 targeting an element. How does the cascade determine which rule to apply? Whichever rule was the last defined is the winner.
 
 Adding CSS to HTML
+
+External CSS
+It involves creating a separate file for the CSS and linking it inside of an HTML’s opening and closing <head> tags 
+with a self-closing <link> element.
+The href attribute is the location of the CSS file, either an absolute URL or a URL relative to the location of 
+the HTML file. 
+The rel attribute is required, and it specifies the relationship between the HTML file and the linked file.
+Inside the CSS file with the file extension .css, we have declarations followed by curly braces which create a 
+declaration block. we place any declarations inside of the declaration block. 
+A note on file names, "style” or “styles” is most commonly used eg styles.css
+pros to this method are:
+1. It keeps our HTML and CSS separated, which results in the HTML file being smaller and making things look cleaner.
+2. We only need to edit the CSS in one place, which is especially handy for websites with many pages that all 
+share similar styles.
+
+Internal CSS
+Internal CSS (or embedded CSS) involves adding the CSS within the HTML file itself instead of creating a 
+completely separate file.
+you place all the rules inside of a pair of opening and closing <style> tags, which are then placed inside 
+of the opening and closing <head> tags of your HTML file.
+The syntax is exactly the same as the external method (selector, curly braces, declarations).
+This method can be useful for adding unique styles to a single page of a website, but it doesn’t keep things 
+separate like the external method, and depending on how many rules and declarations there are it can cause the 
+HTML file to get pretty big.
+
+Inline CSS
+Inline CSS makes it possible to add styles directly to HTML elements, though this method isn’t as recommended.
+We don’t actually use any selectors here, since the styles are being added directly to the element.
+The style attribute is used inside the element with the declaration(s) as attribute values. eg 
+<p style="color: red; background-color: blue;">Hello!</p>
+If you need to add a unique style for a single element, this method can work just fine. 
+
+Cons:
+1. It can quickly become pretty messy once you start adding a lot of declarations to a single element, causing 
+your HTML file to become unnecessarily bloated.
+2. If you want many elements to have the same style, you would have to copy + paste the same style to each 
+individual element, causing lots of unnecessary repetition and more bloat.
+3. Any inline CSS will override the other two methods, which can cause unexpected results.
+This can actually be taken advantage of.
