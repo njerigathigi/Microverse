@@ -1,0 +1,6 @@
+-To inspect HTML and CSS, right click on any element on a webpage(use two fingers for Mac) and select inspect.
+-In the elements pane, you can see the whole structure of your HTML page. Click on an element to select it.
+-You can also click on the blue icon at the top left of the inspector and hover on any element on the page.
+-When an element is selected, the styles tab shows all the styles applied to it.
+-Any styles that are being overwritten will be indicated by a strikethrough of the text.
+-The styles pane also allows you to edit styles directly into the browser.
