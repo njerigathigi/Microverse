@@ -1,0 +1,206 @@
+In JavaScript, you can store a value in a variable with the assignment operator (=).
+To declare a variable in javascript, use the keyword let .
+eg
+let number = 2;
+This assigns the value 2 to the variable named number.
+NB: Note the semi-colon ; after the variable declaration. A semi-colon is not necessary but its good practice to
+signify the end of a statement of code.
+
+If there are any calculations to the right of the = assignment operator, those are performed before the value is assigned 
+to the variable on the left of the operator.
+eg
+let number = 2 + 1; // The operation will be done first.
+
+To print out a statement in Javascript, use console.log() .
+To write comments in Javascript, use //
+Comments are usually ignored when executing code.
+eg 
+let number = 2 + 1;
+console.log(number);
+//3 
+
+There are different types of data that can be stored inside variables. Some examples are: 
+1. Strings eg let name = "Njeri";
+2. Integers(numbers) eg let year = 2022; 
+NB: Strings are enclosed in double quotes. Integers aren't.
+3. A boolean variable is a variable that contains true or false as a value eg let daytime = true;
+NB: true is in lowercase and is not enclosed in double quotes.
+Console.log accepts multiple variables as a coma separated list. 
+ eg 
+ console.log(name, year, daytime);
+ //Njeri 2022 true
+
+Undefined vs null in Javascript
+undefined is a value returned when a variable is declared but a value has not been assigned to it.
+eg 
+var n;
+console.log(n); // This will return the value undefined.
+
+Unassigned variables are initialized by Javascript with the default value of undefined.
+undefined is of the data type undefined. Use the typeof operator to find out data type:
+eg
+typeof undefined;
+//'undefined' (when run in the terminal)
+
+console.log(typeof undefined);
+//undefined
+
+When used in arithmetic operations, undefined will result in NaN (not a number)
+eg:
+var p = 20000, r= 14, t;
+function simpleInterest(){
+  interest = (p * r * t) / 100;
+  return interest;
+}
+console.log(simpleInterest());
+// NaN
+
+or , eg:
+var p = 20000, r= 14, t;
+results = p + r + t;
+console.log(results);
+//Nan
+
+Null is an object. It is usually assigned to a variable as a representation of no value. Javascript never sets a value 
+to null. That must be done programmatically.
+eg
+var salary = null;
+console.log(salary);
+// null
+salary = 3000;
+console.log(salary);
+// 3000
+// this is variable reassignment
+
+//to check the data type of null
+typeof null;
+//'object' (when run in the terminal)
+
+console.log(typeof null); // written on a Javascript script.
+//object
+
+In arithmetic operations, null will be converted to 0 behind the screens
+console.log(null + 1);
+// 1
+
+Undefined and null values are falsy.
+All values are truthy unless they are defined as falsy. That is, all values are truthy except false , 0 , -0 , 0n ,
+ "" , null , undefined and NaN . Javascript uses type coercion in Boolean contexts.
+
+Type Coercion refers to the process of automatic or implicit conversion of values from one data type to another. 
+This includes conversion from Number to String, String to Number, Boolean to Number etc
+
+eg
+!! undefined;
+//false
+!! null;
+//false
+//!! is the boolean double negation operator aka the bang bang operator. It is used to check the boolean equivalent
+of a value.
+
+eg
+var t, a = null; // t is undefined and a is assigned the value null
+if (t) {
+  console.log('t is defined');
+} else if (a) {
+  console.log('a is defined');
+} else {
+  console.log('both t and a are not defined with a value');
+}
+//both t and a are not defined with a value
+
+Comparing undefined and null
+eg
+// comparing undefined and null using the equality operator ==
+undefined == null;
+//true   
+
+When the equality operator is used it compares only the values. Both undefined and null are falsy by default
+so == returns true.
+
+eg
+//comparing undefined and null using the strict equality operator ===
+undefined === null;
+//false
+
+The strict equality operator checks both type and value. Since undefined and null are of two different types, the strict
+equality operator returns false (undefined is of the type undefined and null is of the type object).
+
+variable reassignment
+Once a variable has been declared and assigned to a value, the variable can be reassigned to a new value
+eg
+let number = 5;
+number = 2;
+console.log(number);
+// 2
+
+You can also use the addition assignment operator += to change variables.
+The addition assignment operator adds a value to a variable.
+eg
+let number = 2;
+number += 1; // this is the same as number = number + 1
+console.log(number);
+//3
+
+eg
+let myName = "Njeri";
+myName += "Gathigi";
+console.log(myName);
+//NjeriGathigi
+
+You can also use the addition operator + to add values to a variable.
+eg
+let number = 2;
+number = number + 1;
+console.log(number);
+//3
+
+When you use it to add strings, it is called string concatenation.
+eg
+let myFirstName = "Njeri";
+let mySecondName = "Gathigi";
+let myFullName = myFirstName + mySecondName;
+console.log(myFullName);
+//NjeriGathigi
+
+To add a space to a concatenated string, do this:
+myFullName = myFirstName + " " + mySecondName;
+console.log(myFullName);
+//Njeri Gathigi
+
+Arithmetic Operators are used to perform arithmetic on numbers:
+* - 	Multiplication
+eg
+let number;
+number = 2 * 2;
+console.log(number);
+//4
+
+NB: Notice that we declared the variable number above but we did not assign it a value in the declaration.
+At that stage of code execution, number is given the default value of undefined.
+In the next line, we reassign the variable to the arithmetic operation 2 * 2. This will be calculated to 4 and assigned
+to the variable named number.
+When we print out the variable number, the value 4 will be displayed.
+
+Assigning the Value of One Variable to Another:
+eg
+var number;
+number = 2;
+var otherNumber;
+otherNumber = number;
+console.log(number, otherNumber)
+//2 2
+
+var is a keyword also used to declare variables.
+
+Writing variable names
+Variable names in Javascript are case sensitive. This means that capitalization matters.
+Write variable names in Javascript in camelCase.
+In camelCase, multi-word variable names have the first word in lowercase and the first letter of each 
+subsequent word is capitalized.
+eg
+var favouriteNumber = 2; //f is in lowercase(small f), N is in uppercase ie its capitalized(big N)
+
+TIP: To edit your variables in vsCode, use command + D(Mac) or Ctrl + D in other computers. Select the word by 
+highlighting it, press command + D or Ctrl D to select all similar words. Navigate using navigation keys. Edit and 
+save.
