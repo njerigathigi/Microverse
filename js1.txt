@@ -12,12 +12,15 @@ eg
 let number = 2 + 1; // The operation will be done first.
 
 To print out a statement in Javascript, use console.log() .
-To write comments in Javascript, use //
+To write single-line comments in Javascript, use //
 Comments are usually ignored when executing code.
+To write multi-line comments, use /* comment */ 
 eg 
 let number = 2 + 1;
 console.log(number);
 //3 
+/* This is an example
+of a multi-lined comment */
 
 There are different types of data that can be stored inside variables. Some examples are: 
 1. Strings eg let name = "Njeri";
