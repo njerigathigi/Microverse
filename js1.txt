@@ -14,6 +14,8 @@ let number = 2 + 1; // The operation will be done first.
 To print out a statement in Javascript, use console.log() .
 To write single-line comments in Javascript, use //
 Comments are usually ignored when executing code.
+NB: As you write code, you should regularly add comments to clarify the function of parts of your code. 
+Good commenting can help communicate the intent of your code—both for others and for your future self.
 To write multi-line comments, use /* comment */ 
 eg 
 let number = 2 + 1;
