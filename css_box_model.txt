@@ -1,0 +1,21 @@
+The box model has to do with positioning and layout.
+Every single thing on a webpage is a rectangular box.
+Laying out a webpage and positioning all its elements is deciding how you are going to nest and stack these boxes.
+There are many ways to manipulate the size of these boxes, and the space between them, using padding, margin and border.
+Padding increases the space between the edge of a box and the content inside of it.
+Margin increases the space between a box(the element) and any others that sit next to it.(including the edges of the 
+webpage itself).
+Border adds space (even if it’s only a pixel or two) between the margin and the padding (it fences the element).
+(Watch video on padding on saved YT playlist)
+eg. *{
+  border: 2px solid red;
+  height: 10px;
+  width: 10px;
+  margin: 70px;
+  padding: 25px;
+  border-box: auto; /* The width and height of the element take into account the padding and border measurements of
+  the element. The sum of the size of the element, padding and margin with equal to the height and width */
+}
+(read bookmarked articles)
+-To change the shape of a box, add border-radius property.
+(frontend expert: algoexpert.io/frontend)
